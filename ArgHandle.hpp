@@ -21,12 +21,12 @@ class ArguementHandler{
 			}
 			return(output);
 		}
-		void PrintArgs(){
+		void printArgs(){
 			for(int i=0;i<args.size();i++){
 				cout<<args[i].type + " " + args[i].value<<endl;
 			}
 		}
-		vector<Arguement> FindArgs(string type){
+		vector<Arguement> findArgs(string type){
 			vector<Arguement> output;
 			for(int i=0;i<args.size();i++){
 				if(args[i].type == type){output.push_back(args[i]);}
